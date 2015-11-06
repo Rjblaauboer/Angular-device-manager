@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS Tutorial</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body ng-app='app'>
+	<div ng-controller="MainController">
+		<div class="container">
+			<!-- <h1>{{title}}</h1>
+			<search:box></search:box>
+			<h3>A list of TV shows</h3>
+			<show:list></show:list>
+			<!-- Select order of tv shows !-->
+			<!-- <select class="form-control pull-right" ng-model="order" ng-options="order as order.title for order in orders"></select>
+			<div class="clearfix"></div>
+			<h3>Add a new TV Show</h3>
+			<show:add></show:add> --> 
+			<div class="clearfix"></div>
+			<who:has></who:has>
+		</div>
+	</div>
+
+	<script src="angular.js"></script>	
+	<script src="central.json"></script>
+    <script src="app.js"></script>
+    <script src="main.ctrl.js"></script>
+    <script src="angular-who-has.js"></script>
+
+</body>
+</html>
