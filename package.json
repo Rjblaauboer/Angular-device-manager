@@ -1,0 +1,23 @@
+{
+  "name": "devicemgr",
+  "version": "1.0.0",
+  "description": "A system to check-out mobile devices",
+  "main": "main.ctrl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rjblaauboer/Angular-device-manager.git"
+  },
+  "author": "Robert Blaauboer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rjblaauboer/Angular-device-manager/issues"
+  },
+  "homepage": "https://github.com/Rjblaauboer/Angular-device-manager#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-serve": "^0.1.6"
+  }
+}

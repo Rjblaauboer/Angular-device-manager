@@ -1,6 +1,4 @@
-angular.module('deviceMgr', [])
-
-    .directive('whoHas',[ function() {
+angular.module('deviceMgr', []).directive('whoHas',[ function() {
         return {
             restrict: 'AE',
             replace: 'true',
