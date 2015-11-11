@@ -1,3 +1,12 @@
+// **Angular Device Manager** 
+// An Angular directive which can be implemented as a widget. 
+// Allows for reserving mobile devices with your name
+//
+// Example shows devices having personal names instead of
+// IDs to be more easily distinguishable
+//
+// Created by Robert Blaauboer 2015
+
 angular.module('deviceMgr', []).directive('whoHas', function() {
         return {
             restrict: 'AE',
@@ -8,43 +17,43 @@ angular.module('deviceMgr', []).directive('whoHas', function() {
                     $scope.devices = [
                         {
                             id: 0,
-                            name: 'Jack', 
+                            name: 'Jack',
                             model: 'iPhone 5',
                             owner: "Available"
                         },
                         {
                             id: 1,
-                            name: 'Jill', 
+                            name: 'Mary',
                             model: 'iPhone 5',
                             owner: "Available"
                         },
                         {
                             id: 2,
-                            name: 'Jo', 
+                            name: 'Jo',
                             model: 'iPhone 4s',
                             owner: "Available"
                         },
                         {
                             id: 3,
-                            name: 'Flo', 
+                            name: 'Flo',
                             model: 'iPhone 4s',
                             owner: "Available"
                         },
                         {
                             id: 4,
-                            name: 'Adam', 
+                            name: 'Dirk',
                             model: 'iPhone 5c',
                             owner: "Available"
                         },
                         {
                             id: 5,
-                            name: 'Eve', 
+                            name: 'Jan',
                             model: 'iPhone 5c',
                             owner: "Available"
                         },
                         {
                             id: 6,
-                            name: 'Dirk', 
+                            name: 'Joe',
                             model: 'iPad Mini',
                             owner: "Available"
                         }
@@ -57,14 +66,14 @@ angular.module('deviceMgr', []).directive('whoHas', function() {
                     scope.selectedIndex = index;
                 };
                 scope.changeOwner = function() {
-                    if(scope.owner){
-                        scope.devices[scope.selectedIndex].owner = scope.owner;
-                        scope.owner = null;
-                        scope.selectedIndex = -1; 
+                    if(scope.ownerInput){
+                        scope.devices[scope.selectedIndex].owner = scope.ownerInput;
+                        scope.ownerInput = null;
+                        scope.selectedIndex = -1;
                     } else {
                         scope.devices[scope.selectedIndex].owner = "Available";
-                        scope.owner = null;
-                        scope.selectedIndex = -1;                    
+                        scope.ownerInput = null;
+                        scope.selectedIndex = -1;                  
                     }
                 };
                 scope.getColor = function(index) {

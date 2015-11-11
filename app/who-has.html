@@ -1,4 +1,5 @@
 <div class="col-xs-12">
+	<!-- Angular Device Manager - Who has Directive template -->
 	<ul class="list-group">
 		<li class="list-group-item" ng-style="{ 'background-color': getColor($index) }" ng-repeat="device in devices" ng-click="itemClicked($index, this)">
 			</span>
@@ -10,10 +11,10 @@
         <label>Please enter your name</label>
         <div class="clearfix"></div>
         <div class="col-xs-8">
-	        <input type="text" class="form-control" ng-model="owner"/>
+	        <input type="text" class="form-control" ng-model="ownerInput"/>
         </div>
         <button class="btn btn-success pull-right col-xs-4" ng-click="changeOwner()">
-        Check Out
+        Reserve
     	</button>
     </div>   
 </div>
